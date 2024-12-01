@@ -19,7 +19,7 @@ version.BuildInfo{Version:"v3.16.3", GitCommit:"cfd07493f46efc9debd9cc1b02a09611
 
 Подготовим ```deployment``` ```service``` и разместим их в директории ```templates/```:
 
-- [templates/deployment.yaml](kubernetes_2-5/src/netology-chart/templates/deployment.yaml)
+- [templates/deployment.yaml](https://github.com/Makarov-Denis/kubernetes_2-5/blob/main/src/netology-chart/templates/deployment.yaml)
 
 ```yaml
 apiVersion: apps/v1
@@ -47,7 +47,7 @@ spec:
               containerPort: {{ .Values.appPort }}
               protocol: TCP
 ```
-- [templates/service.yaml](kubernetes_2-5/src/netology-chart/templates/service.yaml)
+- [templates/service.yaml](https://github.com/Makarov-Denis/kubernetes_2-5/blob/main/src/netology-chart/templates/service.yaml)
 ```yaml
 apiVersion: v1
 kind: Service
@@ -63,7 +63,7 @@ spec:
     app: main
 ```
 Подготовим ```Chart```: 
-- [Chart.yaml](kubernetes_2-5/src/netology-chart/Chart.yaml)
+- [Chart.yaml](https://github.com/Makarov-Denis/kubernetes_2-5/blob/main/src/netology-chart/Chart.yaml)
 ```yaml
   apiVersion: v2
   name: netology
@@ -74,7 +74,7 @@ spec:
   appVersion: "1.16.0"
 ```
 Подготовим ```values```:
-- [values.yaml](kubernetes_2-5/src/netology-chart/values.yaml)
+- [values.yaml](https://github.com/Makarov-Denis/kubernetes_2-5/blob/main/src/netology-chart/values.yaml)
 ```yaml
 replicaCount: 1
 
